@@ -8,6 +8,12 @@
   <meta name="description" content="This site is a test site.">
   <link rel="icon" type="image/x-icon" href="img/favicon_house.ico">
   <script src="scripts/vendors/pace.js"></script>
+  <script>
+    Pace.on('start', function() {
+    const paceProgressInner = document.querySelector('.pace-progress-inner');
+    paceProgressInner.innerHTML = '<div></div><div></div><div></div><div></div><div></div>';
+  });
+  </script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
   <link rel="stylesheet" href="styles/style.css">

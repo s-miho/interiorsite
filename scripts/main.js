@@ -3,11 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobilemenu = new MobileMenu;
   viewSlide('.service img');
   new Main;
-
-  Pace.on('start', function() {
-    const paceProgressInner = document.querySelector('.pace-progress-inner');
-    paceProgressInner.innerHTML = '<div></div><div></div><div></div><div></div><div></div>';
-  });
 });
 
 
