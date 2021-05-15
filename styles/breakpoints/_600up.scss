@@ -1,0 +1,33 @@
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.news {
+  &__text {
+    & > ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;        
+    }
+  }
+  &__date {
+    flex-basis: 20%;
+  }
+  &__new {
+    flex-basis: 80%;
+  }
+}
+
+.service {
+  justify-content: center;
+
+  &__img,
+  &__text {
+    flex-basis: 50%;
+    margin: 0 25px;
+  }
+}
+

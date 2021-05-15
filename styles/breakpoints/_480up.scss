@@ -1,0 +1,38 @@
+.cordinate {
+
+  &__img {
+    
+    & > img {
+      height: 200px;
+      width: 300px;
+      margin: 15px 15px;
+    }
+  }
+}
+
+.top {
+  &__title {
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.7em;
+    top: 41%;
+    left: 37%;
+    margin: 0;
+    z-index: 2;
+
+    & span {
+      display: inline-block;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 8px #fff,
+                  -2px 2px 8px #fff,
+                  2px -2px 8px #fff,
+                  -2px -2px 8px #fff;
+    }
+  }
+}
+
+.footer {
+  &__menu {
+    display: flex;
+  }
+}
