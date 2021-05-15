@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobilemenu = new MobileMenu;
   viewSlide('.service img');
   new Main;
+
+  Pace.on('start', function() {
+    const paceProgressInner = document.querySelector('.pace-progress-inner');
+    paceProgressInner.innerHTML = '<div></div><div></div><div></div><div></div><div></div>';
+  });
 });
 
 
@@ -50,13 +55,6 @@ class Slider {
     });
   }
 }
-
-
-//ローダー
-Pace.on('start', function() {
-  const paceProgressInner = document.querySelector('.pace-progress-inner');
-  paceProgressInner.innerHTML = '<div></div><div></div><div></div><div></div><div></div>';
-});
 
 
 //serviceの画像スライド
